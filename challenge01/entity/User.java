@@ -9,6 +9,32 @@ public class User {
     private String loc;
     private String fll;
 
+    public void parseStringToUses(String strUser) {
+        var props = strUser.split(" ");
+
+        for (String p: props) {
+            var propName = p.substring(0, p.indexOf(":"));
+            var propValue = p.substring(p.indexOf(":")+1) ;
+            setValueToUser(propName, propValue);
+        }
+    }
+
+    public boolean isValidUser() {
+        return getUsr() != null && getEme() != null && getPsw() != null
+                && getAge() != null && getLoc() != null && getFll() != null;
+    }
+
+    private void setValueToUser(String propName, String propValue) {
+        switch (propName) {
+            case "usr" -> usr = propValue;
+            case "eme" -> eme = propValue;
+            case "psw" -> psw = propValue;
+            case "age" -> age = propValue;
+            case "loc" -> loc = propValue;
+            case "fll" -> fll = propValue;
+        }
+    }
+
     public String getUsr() {
         return usr;
     }

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e8e0edc-e753-4dba-80b5-9f6c6da3c6d1" name="Changes" comment="Challenge01 completed" />
+    <list default="true" id="7e8e0edc-e753-4dba-80b5-9f6c6da3c6d1" name="Changes" comment="Challenge01 completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge01/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge01/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge01/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge01/utils/UserUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Codember/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Codember/challenge01/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Codember/challenge01/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Codember/challenge01/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Codember/challenge01/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Codember/challenge01/utils/UserUtils.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,14 +39,19 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "14",
-    "last_opened_file_path": "C:/Users/Mario/Desktop/Codember"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;14&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mario/Desktop/Codember&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mario\Desktop\Codember" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="challenge01.Main" />
@@ -96,7 +110,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668040429490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Challenge01 completed">
+      <created>1668040459672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668040459672</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Challenge01 completed">
+      <created>1668040574059</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668040574059</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Challenge01 completed">
+      <created>1668040657780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668040657780</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
