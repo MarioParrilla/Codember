@@ -8,7 +8,7 @@ public class Input {
     private static BufferedReader br = null;
 
     public static void init(String filepath) throws FileNotFoundException {
-        file = new File (filepath);
+        file = new File(filepath);
         fr = new FileReader (file);
         br = new BufferedReader(fr);
     }

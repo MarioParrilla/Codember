@@ -3,11 +3,13 @@ package challenge01;
 import challenge01.entity.User;
 import io.Input;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 public class Main {
+    final static String path = "/challenge01/users.txt";
     public static void main(String[] args) {
         try {
-            run(args[0]);
+            run(Paths.get("").toAbsolutePath()+path);
         } catch (IOException e) {
             System.out.println("Error: "+e.getMessage());
         }

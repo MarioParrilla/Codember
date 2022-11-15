@@ -4,13 +4,15 @@ import challenge02.utils.ASCIIUtils;
 import io.Input;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
+    final static String path = "/challenge02/encryptedMsg.txt";
     public static void main(String[] args) {
         try {
-            run(args[0]);
+            run(Paths.get("").toAbsolutePath()+path);
         } catch (IOException e) {
             System.out.println("Error: "+e.getMessage());
         }
