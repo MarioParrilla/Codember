@@ -1,7 +1,7 @@
 package challenge01;
 
 import challenge01.entity.User;
-import challenge01.io.Input;
+import io.Input;
 import java.io.IOException;
 
 public class Main {

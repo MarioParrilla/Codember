@@ -1,4 +1,4 @@
-package challenge01.io;
+package io;
 
 import java.io.*;
 
