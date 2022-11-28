@@ -1,6 +1,8 @@
 package io;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Input {
     private static File file = null;
@@ -22,9 +24,23 @@ public class Input {
                 lines += line;
             else
                 lines += " "+line;
+            System.out.println(line);
         }
 
         if (!lines.equals("")) return lines;
+
+        return null;
+    }
+
+    public static <T> List<T> readLinesToList() throws IOException {
+        List<T> list = new ArrayList<>();
+        String line = null;
+
+        while ((line = br.readLine()) != null && !line.isEmpty()) {
+            list.add((T) line);
+        }
+
+        if (!list.isEmpty()) return list;
 
         return null;
     }
