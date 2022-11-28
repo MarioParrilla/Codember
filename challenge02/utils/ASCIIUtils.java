@@ -5,9 +5,9 @@ public class ASCIIUtils {
         int endOfLastLetter = 0;
         String word = "";
         for (int i = 1; i <= asciiCodeSequence.length(); i++) {
-            int asciiCode = Integer.parseInt(asciiCodeSequence.substring(endOfLastLetter,i));
+            Double asciiCode = Double.parseDouble(asciiCodeSequence.substring(endOfLastLetter,i));
             if (asciiCode >= Constants.MIN_ASCII_CODE && asciiCode <= Constants.MAX_ASCII_CODE) {
-                word+=Character.valueOf((char) asciiCode);
+                word+=Character.valueOf((char) asciiCode.intValue());
                 endOfLastLetter = i;
             }
         }
