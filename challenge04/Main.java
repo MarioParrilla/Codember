@@ -19,15 +19,13 @@ public class Main {
 
         for (int i = MIN; i <= MAX; i++) {
             boolean isValid = false;
-            int countOfFives = 0;
             int lastNum = 0;
+            String stringNum = String.valueOf(i);
 
-            for (String current : String.valueOf(i).split("")) {
+            for (String current : stringNum.split("")) {
                 int currentNum = Integer.parseInt(current);
                 if (currentNum >= lastNum) {
                     lastNum = currentNum;
-                    if (currentNum == 5)
-                        countOfFives++;
                     isValid = true;
                 }
                 else {
@@ -35,7 +33,7 @@ public class Main {
                     break;
                 }
             }
-            if (countOfFives > 1 && isValid)
+            if (stringNum.replaceAll("[123467890]","").length() > 1 && isValid)
                 validPasswords.add(i);
         }
         System.out.printf("%d-%d", validPasswords.size(), validPasswords.get(55));
