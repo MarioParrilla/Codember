@@ -32,15 +32,23 @@ public class Input {
         return null;
     }
 
-    public static <T> List<T> readLinesToList() throws IOException {
+    public static <T> List<T> jsonArrayToList(Class<?> type) throws IOException {
         List<T> list = new ArrayList<>();
+
         String line = null;
 
         while ((line = br.readLine()) != null && !line.isEmpty()) {
+            if (line.equals("[") || line.equals("]"))
+                continue;
             list.add((T) line);
         }
 
-        if (!list.isEmpty()) return list;
+        if (!list.isEmpty()) {
+            if (type == String.class)
+                return (List<T>) list.stream().map(e -> ((String) e).trim().replaceAll("\",|\"","")).toList();
+            else
+                return list;
+        }
 
         return null;
     }

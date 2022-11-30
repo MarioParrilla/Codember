@@ -1,16 +1,14 @@
 package challenge03;
 
-import challenge02.utils.ASCIIUtils;
 import io.Input;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    final static String path = "/challenge03/colors.txt";
+    final static String path = "/challenge03/colors.json";
     public static void main(String[] args) {
         try {
             run(Paths.get("").toAbsolutePath()+path);
@@ -24,11 +22,9 @@ public class Main {
         List<String> listOfColors;
         ArrayList<String> zebra = new ArrayList<>();
         do {
-            listOfColors = Input.readLinesToList();
+            listOfColors = Input.jsonArrayToList(String.class);
             if (listOfColors == null)
                 break;
-
-            listOfColors = listOfColors.stream().map( e -> e.trim().replaceAll("\",|\"","")).toList();
 
             String lastColor = null;
             int maxCount = 0;
